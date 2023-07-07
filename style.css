@@ -90,16 +90,19 @@ body
     letter-spacing: 1px;
     margin-bottom: 40px;
 }
-.contactInfo ul
+.contactInfo ul, .education ul
 {
     position: relative;
 }
-.contactInfo ul li
+.contactInfo ul li, .education ul li
 {
     position: relative;
     list-style: none;
     margin: 10px 0;
-    cursor: pointer;
+}
+.contactInfo ul li
+{
+    height: 30px;
 }
 .contactInfo ul li .icon
 {
@@ -108,27 +111,38 @@ body
     font-size: 18px;
     color: #527674;
 }
+.contactInfo ul li
+{
+    transition: transform 0.2s, font-size 0.2s;
+    cursor: pointer;
+}
+.contactInfo ul li:hover 
+{
+    transform: translateY(-1px);
+    font-size: 18.5px
+}
 .contactInfo ul li span
 {
     color: #fff;
     font-weight: 300;
     text-decoration: none;
 }
-.contactInfo.education li
+.education li
 {
     margin-bottom: 15px;
+    height: 100px;
 }
-.contactInfo.education h5
+.education h5
 {
     color: #527674;
     font-weight: 500;
 }
-.contactInfo.education h4:nth-child(2)
+.education h4:nth-child(2)
 {
     color: #fff;
     font-weight: 500;
 }
-.contactInfo.education h4
+.education h4
 {
     color: #fff;
     font-weight: 300;
